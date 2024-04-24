@@ -1,0 +1,33 @@
+<style>
+*{padding:0;margin:0;overflow:hidden;}
+    #c{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        border:1px solid black;
+    }
+    #b{border-radius: 8px;
+    background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+    }
+</style>
+<div id="c">
+    <h1 id="a">You need to login to access this file</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <button id="b" onclick="op()">Log in</button>
+</div>
+<script>
+    function op(){
+        window.open('./email.html','','popup,height=200');
+    }
+</script>
