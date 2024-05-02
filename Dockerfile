@@ -1,4 +1,4 @@
-FROM node:bookworm-slim
+FROM node:19-bullseye
 ENV NODE_ENV=production
 
 WORKDIR /app
