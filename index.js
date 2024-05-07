@@ -29,9 +29,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(dir,"static","index.html"))
 })
 
-app.get('/@', (req, res) => {
-    res.sendFile(path.join(dir,"static","seecookie.html"))
-})
 app.get('/login', (req, res) => {
     var email=getCookie("email",req.headers.cookie)
     var pw=getCookie("pw",req.headers.cookie)
