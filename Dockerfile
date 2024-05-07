@@ -1,4 +1,9 @@
-FROM node:19-bullseye
+FROM alpine:edge
+
+RUN apk update
+
+RUN apk add nodejs npm
+
 ENV NODE_ENV=production
 
 WORKDIR /app
